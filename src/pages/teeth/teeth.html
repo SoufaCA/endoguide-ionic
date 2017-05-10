@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Teeth</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6 *ngFor="let tooth of teeth">
+        <div *ngIf="tooth != null;">
+          <ion-card>
+            <div class="card-title">{{tooth.title}}</div>
+            <div class="card-subtitle">{{tooth.description}}</div>
+          </ion-card>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
